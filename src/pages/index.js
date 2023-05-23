@@ -9,13 +9,22 @@ const IndexPage = () => {
             BYOB
           </a>
           <div className="flex flex-row text-xl">
-            <a className="text-white mx-2 hover:cursor-pointer hover:underline hover:underline-offset-4 hover:text-green-600">
+            <a
+              href="#participants"
+              className="text-white mx-2 hover:cursor-pointer hover:underline hover:underline-offset-4 hover:text-green-600"
+            >
               Participants
             </a>
-            <a className="text-white mx-2 hover:cursor-pointer hover:underline hover:underline-offset-4 hover:text-green-600">
+            <a
+              href="#venue"
+              className="text-white mx-2 hover:cursor-pointer hover:underline hover:underline-offset-4 hover:text-green-600"
+            >
               Venue
             </a>
-            <a className="text-white mx-2 hover:cursor-pointer hover:underline hover:underline-offset-4 hover:text-green-600">
+            <a
+              href="#sponsors"
+              className="text-white mx-2 hover:cursor-pointer hover:underline hover:underline-offset-4 hover:text-green-600"
+            >
               Sponsors
             </a>
           </div>
@@ -28,6 +37,38 @@ const IndexPage = () => {
         <h1 className="font-display text-4xl text-white drop-shadow-4xl shadow-white my-2">
           1.07.2023
         </h1>
+
+        <article id="participants" className="mt-20">
+          <div className="flex flex-row p-10">
+            <h2 className="font-display text-2xl text-white drop-shadow-4xl shadow-white my-2">
+              Participants
+            </h2>
+          </div>
+        </article>
+
+        <article id="venue" className="mt-20 p-10">
+          <div className="flex flex-row">
+            <h2 className="font-display text-2xl text-white drop-shadow-4xl shadow-white my-2">
+              Venue
+            </h2>
+          </div>
+        </article>
+
+        <article id="sponsors" className="mt-20 p-10">
+          <div className="flex flex-row">
+            <h2 className="font-display text-2xl text-white drop-shadow-4xl shadow-white my-2">
+              Sponsors
+            </h2>
+          </div>
+        </article>
+
+        <article id="about" className="mt-20 p-10">
+          <div className="flex flex-row">
+            <h2 className="font-display text-2xl text-white drop-shadow-4xl shadow-white my-2">
+              About
+            </h2>
+          </div>
+        </article>
       </main>
     </div>
   );

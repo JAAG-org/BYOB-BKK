@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         display: ["Boltyn"],
       },
+      cursor: {
+        star: "url('/star.svg')",
+      },
     },
   },
   plugins: [],
