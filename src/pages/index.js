@@ -30,7 +30,7 @@ const IndexPage = () => {
           </div>
         </div>
       </nav>
-      <main className="p-10 h-full text-center">
+      <main className="p-10 h-full text-center pb-48">
         <h1 className="font-display text-4xl text-white drop-shadow-4xl shadow-white my-2">
           BRING YOUR OWN BEAMER
         </h1>

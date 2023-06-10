@@ -10,7 +10,7 @@ module.exports = {
         display: ["Boltyn"],
       },
       cursor: {
-        star: "url('/star.svg')",
+        star: "url('/images/star.svg'), default",
       },
     },
   },
