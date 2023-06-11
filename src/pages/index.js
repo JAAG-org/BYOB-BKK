@@ -1,10 +1,13 @@
 import * as React from "react";
+import { graphql } from "gatsby";
 import Disclosure from "../components/atoms/disclosure";
 import Navigator from "../components/subpages/navigator";
 import { StaticImage } from "gatsby-plugin-image";
 import GoogleMapReact from "google-map-react";
+import { useTranslation } from "gatsby-plugin-react-i18next";
 
 const IndexPage = () => {
+  const { t } = useTranslation();
   return (
     <div className="bg-slate-300">
       <Navigator />
@@ -33,7 +36,7 @@ const IndexPage = () => {
         >
           <div className="flex flex-row">
             <h2 className="font-display text-4xl text-white drop-shadow-4xl shadow-white my-2">
-              Venue
+              {t("venue")}
             </h2>
           </div>
 
@@ -131,3 +134,17 @@ const IndexPage = () => {
 export default IndexPage;
 
 export const Head = () => <title>Home Page</title>;
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(filter: { language: { eq: $language } }) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
