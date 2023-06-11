@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         display: ["Boltyn"],
+        mono: ["JetBrains Mono"],
       },
       cursor: {
         star: "url('/images/star.svg'), default",
