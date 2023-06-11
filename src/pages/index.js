@@ -44,7 +44,7 @@ const IndexPage = () => {
             <div className="w-96 h-[20rem]">
               <GoogleMapReact
                 bootstrapURLKeys={{
-                  key: process.env.GOOGLE_MAP_API_KEY,
+                  key: process.env.GATSBY_GOOGLE_MAP_API_KEY,
                 }}
                 defaultCenter={{
                   lat: 13.7236455,
