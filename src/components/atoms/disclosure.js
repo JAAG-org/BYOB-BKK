@@ -7,7 +7,7 @@ const MyDisclosure = (props) => {
     <Disclosure>
       {({ open }) => (
         <>
-          <Disclosure.Button className="py-4 px-3 text-xl font-bold font-mono text-black rounded shadow-gray border border-gray shadow-xl hover:shadow-white">
+          <Disclosure.Button className="py-4 px-3 text-lg lg:text-xl font-semibold font-mono text-neutral-800 rounded shadow-gray border border-gray shadow-xl hover:shadow-white">
             {props.head}
           </Disclosure.Button>
           <Transition
@@ -21,7 +21,7 @@ const MyDisclosure = (props) => {
           >
             <Disclosure.Panel
               static
-              className="text-gray-800 text-lg font-mono rounded border border-white py-8"
+              className="text-gray-800 text-lg font-mono rounded border border-white py-8 px-10 text-start"
             >
               {props.body}
             </Disclosure.Panel>
