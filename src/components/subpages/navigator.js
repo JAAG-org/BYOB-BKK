@@ -24,6 +24,12 @@ const Navigator = () => {
             Venue
           </a>
           <a
+            href="#organizers"
+            className="text-white mx-2 hover:cursor-pointer hover:underline hover:underline-offset-4 hover:text-green-600"
+          >
+            Organizers
+          </a>
+          <a
             href="#FAQS"
             className="text-white mx-2 hover:cursor-pointer hover:underline hover:underline-offset-4 hover:text-green-600"
           >

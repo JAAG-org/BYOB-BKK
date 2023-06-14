@@ -92,12 +92,12 @@ const IndexPage = () => {
         </article> */}
 
         <article
-          id="about"
+          id="organizers"
           className="mt-20 p-10 border border-white rounded-xl shadow-md shadow-gray"
         >
           <div className="flex flex-row">
             <h2 className="font-display text-4xl text-white drop-shadow-4xl shadow-white my-2">
-              About
+              Organizers
             </h2>
           </div>
         </article>
