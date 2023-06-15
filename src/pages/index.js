@@ -12,7 +12,7 @@ const IndexPage = () => {
   return (
     <div className="bg-slate-300">
       <Navigator />
-      <main className="p-10 h-full text-center pb-48">
+      <main className="lg:p-10 p-4 h-full text-center pb-48">
         <h1 className="font-display hover:font-mono hover:cursor-pointer text-5xl text-white drop-shadow-4xl shadow-white my-2">
           BRING YOUR OWN BEAMER
         </h1>
