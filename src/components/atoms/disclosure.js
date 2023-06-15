@@ -21,7 +21,7 @@ const MyDisclosure = (props) => {
           >
             <Disclosure.Panel
               static
-              className="text-gray-800 text-lg font-mono rounded border border-white py-8 px-10 text-start"
+              className="text-gray-800 lg:text-lg text-sm font-mono rounded border border-white lg:py-8 py-4 lg:px-10 px-5 text-start"
             >
               {props.body}
             </Disclosure.Panel>

@@ -67,7 +67,7 @@ const IndexPage = () => {
             </div>
             <div className="mt-8">
               <a
-                className="font-mono text-2xl text-blue-700 font-light shadow-lg p-4 px-8 rounded border hover:shadow-white hover:shadow-xl border-white hover:cursor-pointer w-80"
+                className="font-mono lg:text-2xl text-lg text-blue-700 font-light shadow-lg p-4 px-8 rounded border hover:shadow-white hover:shadow-xl border-white hover:cursor-pointer w-80"
                 href="https://docs.google.com/forms/d/e/1FAIpQLScHKDI9dAQuY9tdlcGs8fBDFwVo25c1epdl0HMF5xArAMNlpg/viewform"
               >
                 {" "}
@@ -88,13 +88,13 @@ const IndexPage = () => {
           </div>
 
           <div className="mt-8 flex lg:flex-row flex-col items-center gap-10 lg:justify-around">
-            <div className="w-96 h-full">
+            <div className="lg:w-96 w-72 h-full">
               <StaticImage
                 src="../images/bccg.svg"
                 alt="BANGKOK CITYCITY GALLERY"
               />
             </div>
-            <div className="w-96 h-[20rem]">
+            <div className="lg:w-96 w-72 h-[20rem]">
               <GoogleMapReact
                 bootstrapURLKeys={{
                   key: process.env.GATSBY_GOOGLE_MAP_API_KEY,
@@ -120,11 +120,11 @@ const IndexPage = () => {
             <p className="font-mono text-lg break w-96">
               BANGKOK CITYCITY GALLERY
             </p>
-            <p className="font-mono text-lg break w-96">
+            <p className="font-mono lg:text-lg text-md break lg:w-96 w-72">
               13/3 Sathorn 1 South Sathorn Road Thung Mahamek Bangkok, Thailand
               10120
             </p>
-            <p className="font-mono text-lg break w-full">
+            <p className="font-mono lg:text-lg text-md break w-full">
               +6683 087 2725 info@bangkokcitycity.com
             </p>
           </div>
@@ -150,8 +150,8 @@ const IndexPage = () => {
               Organizers
             </h2>
           </div>
-          <div className="flex flex-col w-full lg:flex-row lg:justify-around gap-5">
-            <div className="flex flex-col gap-5 border border-gray shadow-sm pr-4 rounded">
+          <div className="flex flex-col lg:flex-row lg:justify-around gap-5">
+            <div className="flex flex-col gap-5 border border-gray shadow-sm lg:pr-4 rounded">
               <h2 className="font-mono text-4xl font-semibold text-white drop-shadow-4xl shadow-white my-2">
                 JAAG
               </h2>
@@ -162,7 +162,7 @@ const IndexPage = () => {
                   src="../images/JAAG.jpg"
                   alt="JAAG (Joint Artistic Amateur Group"
                 />
-                <p className="font-mono w-96 lg:text-start text-center">
+                <p className="font-mono lg:p-0 p-2 lg:w-96 w-50 lg:text-base text-sm lg:text-start text-center">
                   JAAG was founded in 2021 by Wasawat Somno (live-coding artist,
                   software engineer), Tewprai Bualoi (visual artist, software
                   engineer), and Nanut Thanapornrapee (visual artist, creative).
@@ -175,18 +175,18 @@ const IndexPage = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col gap-5 border border-gray shadow-sm pr-4 rounded">
-              <h2 className="font-mono text-4xl font-semibold text-white drop-shadow-4xl shadow-white my-2">
+            <div className="flex flex-col items-center gap-5 border border-gray shadow-sm lg:pr-4 rounded">
+              <h2 className="font-mono lg:text-4xl text-2xl font-semibold text-white drop-shadow-4xl shadow-white my-2">
                 ZonZon.Studio
               </h2>
-              <div className="flex lg:flex-row lg:justify-between lg:items-start flex-col items-center gap-6">
+              <div className="flex w-full lg:flex-row lg:justify-between lg:items-start flex-col items-center gap-6">
                 <StaticImage
                   width={300}
                   height={400}
                   src="../images/ZonZon.jpg"
                   alt="ZonZon.Studio"
                 />
-                <p className="font-mono w-96 lg:text-start text-center">
+                <p className="font-mono lg:w-96 lg:p-0 p-2 w-50 lg:text-base text-sm lg:text-start text-center">
                   Setthasiri Chanjaradpong aka ZonZon.Studio is a keen observer
                   who expresses himself through video art and documentaries.
                   Setthasiri has moved from the field of filmmaking to the
