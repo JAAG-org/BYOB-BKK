@@ -222,7 +222,7 @@ const IndexPage = () => {
           <div className="flex flex-col mt-5 gap-10">
             <Disclosure
               head="Do you accept all applications ?"
-              body="Yes. We are also ok if you come at 1st July without registering, but we cannot gaurantee to provide you with the projectors or the plug outlet. Please help us fill the form before 25, so we can easy organize the events. Thank you :)"
+              body="Yes. You can participate without registering on July 1st, but we cannot guarantee to provide projectors or plug outlets. Please fill in the form before July 25th, so we can more easily organize for the event. Thank you : )"
             />
             <Disclosure
               head="Can I bring projectors at 1st July ?"
@@ -231,10 +231,6 @@ const IndexPage = () => {
             <Disclosure
               head="What types of content can I show ?"
               body="Any types of content are welcome ! Except pornography and advertisement (commercial is ok as long as no big logo of brand on screen). Only one restriction is sound, you can't play sound from your projector otherwise it will interfere with other projectors."
-            />
-            <Disclosure
-              head="Can I use sound ?"
-              body="Unfortunately, we don't encourage to display with sounds because there would be so many projectors screening at the same time. We provide the DJ and live performance so you can play the visual to match the audio."
             />
             <Disclosure
               head="Can I come with many works ?"
@@ -257,7 +253,7 @@ const IndexPage = () => {
           </div>
 
           <div className="flex flex-col mt-5 gap-10">
-            <Disclosure head="Is the event free ?" body="yes" />
+            <Disclosure head="Is the event free ?" body="Free admission" />
           </div>
         </article>
       </main>
