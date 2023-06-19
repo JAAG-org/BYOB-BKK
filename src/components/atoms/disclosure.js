@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Disclosure, Transition } from "@headlessui/react";
+import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/solid";
 import PropTypes from "prop-types";
 
 const MyDisclosure = (props) => {
@@ -7,8 +8,13 @@ const MyDisclosure = (props) => {
     <Disclosure>
       {({ open }) => (
         <>
-          <Disclosure.Button className="py-4 px-3 text-lg lg:text-xl font-semibold font-mono text-neutral-800 rounded shadow-gray border border-gray shadow-xl hover:shadow-white">
+          <Disclosure.Button className="flex flex-row justify-between lg:gap-0 gap-4 px-4 text-start items-center lg:items-center py-4 lg:px-3 text-lg lg:text-xl font-semibold font-mono text-neutral-800 rounded shadow-gray border border-gray shadow-xl hover:shadow-white">
             {props.head}
+            {open ? (
+              <ChevronUpIcon width="25" height="25" className="w-14" />
+            ) : (
+              <ChevronDownIcon width="25" height="25" className="w-14" />
+            )}
           </Disclosure.Button>
           <Transition
             show={open}

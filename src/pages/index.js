@@ -207,14 +207,23 @@ const IndexPage = () => {
 
         <article
           id="FAQS"
-          className="mt-20 p-10 border border-white rounded-xl shadow-md shadow-gray"
+          className="mt-20 p-10 pb-20 mb-20 border border-white rounded-xl shadow-md shadow-gray"
         >
           <div className="flex flex-row">
             <h2 className="font-display text-4xl text-white drop-shadow-4xl shadow-white my-2">
               FAQS
             </h2>
           </div>
+          <div className="flex flex-row">
+            <h2 className="font-mono font-bold text-3xl text-white drop-shadow-4xl shadow-white my-2">
+              For Beamers
+            </h2>
+          </div>
           <div className="flex flex-col mt-5 gap-10">
+            <Disclosure
+              head="Do you accept all applications ?"
+              body="Yes. We are also ok if you come at 1st July without registering, but we cannot gaurantee to provide you with the projectors or the plug outlet. Please help us fill the form before 25, so we can easy organize the events. Thank you :)"
+            />
             <Disclosure
               head="Can I bring projectors at 1st July ?"
               body="Yes, you can !"
@@ -222,6 +231,10 @@ const IndexPage = () => {
             <Disclosure
               head="What types of content can I show ?"
               body="Any types of content are welcome ! Except pornography and advertisement (commercial is ok as long as no big logo of brand on screen). Only one restriction is sound, you can't play sound from your projector otherwise it will interfere with other projectors."
+            />
+            <Disclosure
+              head="Can I use sound ?"
+              body="Unfortunately, we don't encourage to display with sounds because there would be so many projectors screening at the same time. We provide the DJ and live performance so you can play the visual to match the audio."
             />
             <Disclosure
               head="Can I come with many works ?"
@@ -235,6 +248,16 @@ const IndexPage = () => {
               head="Can I host my own BYOB Bangkok ?"
               body="Yes, you can ! and please also invite us to join your event :)"
             />
+          </div>
+
+          <div className="flex flex-row mt-10">
+            <h2 className="font-mono font-bold text-3xl text-white drop-shadow-4xl shadow-white my-2">
+              For Audiences
+            </h2>
+          </div>
+
+          <div className="flex flex-col mt-5 gap-10">
+            <Disclosure head="Is the event free ?" body="yes" />
           </div>
         </article>
       </main>
