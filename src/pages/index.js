@@ -222,11 +222,11 @@ const IndexPage = () => {
           <div className="flex flex-col mt-5 gap-10">
             <Disclosure
               head="Do you accept all applications ?"
-              body="Yes. You can participate without registering on July 1st, but we cannot guarantee to provide projectors or plug outlets. Please fill in the form before July 25th, so we can more easily organize for the event. Thank you : )"
+              body="Yes. Please register before July 25th, so we can more easily organize for the event."
             />
             <Disclosure
-              head="Can I bring projectors at 1st July ?"
-              body="Yes, you can !"
+              head="Can I come with projectors at 1st July without registering via the opencall ?"
+              body="Yes. BYOB Bangkok will provide plug outlets for registered participants. Walk-in participants are welcome but must register on site. In this case, we cannot guarantee the availability of projectors or plug outlets."
             />
             <Disclosure
               head="What types of content can I show ?"
