@@ -72,13 +72,13 @@ const Navigator = () => {
               onClick={() => setIsMenuOpen(false)}
             />
             <div className="flex flex-col gap-4">
-              <a
+              {/* <a
                 href="#participants"
                 className="text-white hover:underline hover:underline-offset-4 hover:text-green-600"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Participants
-              </a>
+              </a> */}
               <a
                 href="#opencalls"
                 className="text-white hover:underline hover:underline-offset-4 hover:text-green-600"

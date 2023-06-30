@@ -39,12 +39,12 @@ const IndexPage = () => {
             </h1>
 
             <GuidelineBox>
-              If you need extra setup please come around 2PM.
+              If you need extra setup time please come around 2PM.
             </GuidelineBox>
 
             <GuidelineBox>
               {
-                `Please also bring your own plug outlets and HDMI/VGA/ETC.
+                `Also please bring your own plug outlets and HDMI/VGA/ETC.
                 We got some but possibly not enough.
                 `
               }
@@ -52,16 +52,16 @@ const IndexPage = () => {
 
             <GuidelineBox>
               {
-                `Do Not plug 2 Projector in 1 Plug Outlets.
-                The equipment possibly got damaged.
+                `Do not plug 2 Projectors into 1 Plug Outlet.
+                The equipment may get damaged.
                 `
               }
             </GuidelineBox>
 
             <GuidelineBox>
               {
-                `Do not relocate or change the position of other projectors
-                without first obtaining permission. Please consult with them beforehand.
+                `Do not move or change the position of other projectors without first obtaining permission.
+                Please consult with our staff or owner beforehand.
                 `
               }
             </GuidelineBox>
@@ -69,30 +69,29 @@ const IndexPage = () => {
             <GuidelineBox>
               {
                 `Food and beverages are not permitted in the exhibition area.
-                Only consume alcohol outside. We also serve drinks in the garden area,
-                where you may also play beamers.
+                Drinks are available in the garden area, where you may also play beamers.
                 `
               }
             </GuidelineBox>
 
             <GuidelineBox>
-              *BYOBBKK is not responsible for your personal belongings.
+              *BYOBBKK is not responsible for loss or damage of your personal belongings.
             </GuidelineBox>
           </div>
         </article>
 
-        <article id="participants" className="mt-20">
+        {/* <article id="participants" className="mt-20">
           <div className="flex flex-row p-10">
             <h2 className="font-display text-4xl text-white drop-shadow-4xl shadow-white my-2">
-              Participants
+              Registered Participants
             </h2>
           </div>
-          <div className="grid-cols-3 overflow-hidden items-center">
+          <div className="flex flex-row gap-2 overflow-hidden items-center px-10">
             {artistsList.data.map((artist) => (
-              <p className="font-mono">{artist}</p>
+              <p className="font-mono w-40">{artist}</p>
             ))}
           </div>
-        </article>
+        </article> */}
 
         <article id="opencalls" className="mt-20 p-10 border border-white rounded-xl shadow-md">
           <p className="font-mono font-medium text-lg">
