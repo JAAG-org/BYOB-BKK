@@ -6,10 +6,11 @@ import { StaticImage } from "gatsby-plugin-image";
 import GoogleMapReact from "google-map-react";
 import { Link } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
+import artistsList from "../data/artists.json";
 
 const GuidelineBox = (props) => {
   return (
-  <p className="font-mono text-lg my-2 drop-shadow p-4 bg-gray-200 rounded-xl">
+  <p className="font-mono text-lg my-2 drop-shadow p-4 bg-gray-200 rounded-xl lg:whitespace-pre-line">
     {props.children}
   </p>
   )
@@ -33,7 +34,7 @@ const IndexPage = () => {
 
         <article>
           <div className="flex flex-col p-10">
-            <h1 className="font-mono text-4xl text-white drop-shadow my-2">
+            <h1 className="font-mono text-4xl text-white drop-shadow my-2 mb-4">
               Guideline and Cautions.
             </h1>
 
@@ -42,19 +43,36 @@ const IndexPage = () => {
             </GuidelineBox>
 
             <GuidelineBox>
-              Please also bring your own plug outlets and HDMI/VGA/ETC. We got some but possibly not enough.
+              {
+                `Please also bring your own plug outlets and HDMI/VGA/ETC.
+                We got some but possibly not enough.
+                `
+              }
             </GuidelineBox>
 
             <GuidelineBox>
-              Do Not plug 2 Projector in 1 Plug Outlets. The equipment possibly got damaged.
+              {
+                `Do Not plug 2 Projector in 1 Plug Outlets.
+                The equipment possibly got damaged.
+                `
+              }
             </GuidelineBox>
 
             <GuidelineBox>
-              Do not move or change position of other projectors. Please ask them first.
+              {
+                `Do not relocate or change the position of other projectors
+                without first obtaining permission. Please consult with them beforehand.
+                `
+              }
             </GuidelineBox>
 
             <GuidelineBox>
-              No food and drink in exhibition Area. Only drink outside. We also provide beers and you can also play beamers there.
+              {
+                `Food and beverages are not permitted in the exhibition area.
+                Only consume alcohol outside. We also serve drinks in the garden area,
+                where you may also play beamers.
+                `
+              }
             </GuidelineBox>
 
             <GuidelineBox>
@@ -63,13 +81,18 @@ const IndexPage = () => {
           </div>
         </article>
 
-        {/* <article id="participants" className="mt-20">
+        <article id="participants" className="mt-20">
           <div className="flex flex-row p-10">
             <h2 className="font-display text-4xl text-white drop-shadow-4xl shadow-white my-2">
               Participants
             </h2>
           </div>
-        </article> */}
+          <div className="grid-cols-3 overflow-hidden items-center">
+            {artistsList.data.map((artist) => (
+              <p className="font-mono">{artist}</p>
+            ))}
+          </div>
+        </article>
 
         <article id="opencalls" className="mt-20 p-10 border border-white rounded-xl shadow-md">
           <p className="font-mono font-medium text-lg">
