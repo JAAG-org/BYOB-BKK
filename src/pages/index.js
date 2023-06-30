@@ -7,6 +7,14 @@ import GoogleMapReact from "google-map-react";
 import { Link } from "gatsby";
 import { useTranslation } from "gatsby-plugin-react-i18next";
 
+const GuidelineBox = (props) => {
+  return (
+  <p className="font-mono text-lg my-2 drop-shadow p-4 bg-gray-200 rounded-xl">
+    {props.children}
+  </p>
+  )
+}
+
 const IndexPage = () => {
   const { t } = useTranslation();
   return (
@@ -23,6 +31,38 @@ const IndexPage = () => {
           1.07.2023
         </h1>
 
+        <article>
+          <div className="flex flex-col p-10">
+            <h1 className="font-mono text-4xl text-white drop-shadow my-2">
+              Guideline and Cautions.
+            </h1>
+
+            <GuidelineBox>
+              If you need extra setup please come around 2PM.
+            </GuidelineBox>
+
+            <GuidelineBox>
+              Please also bring your own plug outlets and HDMI/VGA/ETC. We got some but possibly not enough.
+            </GuidelineBox>
+
+            <GuidelineBox>
+              Do Not plug 2 Projector in 1 Plug Outlets. The equipment possibly got damaged.
+            </GuidelineBox>
+
+            <GuidelineBox>
+              Do not move or change position of other projectors. Please ask them first.
+            </GuidelineBox>
+
+            <GuidelineBox>
+              No food and drink in exhibition Area. Only drink outside. We also provide beers and you can also play beamers there.
+            </GuidelineBox>
+
+            <GuidelineBox>
+              *BYOBBKK is not responsible for your personal belongings.
+            </GuidelineBox>
+          </div>
+        </article>
+
         {/* <article id="participants" className="mt-20">
           <div className="flex flex-row p-10">
             <h2 className="font-display text-4xl text-white drop-shadow-4xl shadow-white my-2">
@@ -31,7 +71,7 @@ const IndexPage = () => {
           </div>
         </article> */}
 
-        <article id="opencalls" className="mt-20 p-10">
+        <article id="opencalls" className="mt-20 p-10 border border-white rounded-xl shadow-md">
           <p className="font-mono font-medium text-lg">
             BYOB is a series of motion picture exhibitions that take place for
             one night in various locations around the world. Artists will bring
