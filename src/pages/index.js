@@ -10,11 +10,11 @@ import artistsList from "../data/artists.json";
 
 const GuidelineBox = (props) => {
   return (
-  <p className="font-mono text-lg my-2 drop-shadow p-4 bg-gray-200 rounded-xl lg:whitespace-pre-line">
-    {props.children}
-  </p>
-  )
-}
+    <p className="font-mono text-lg my-2 drop-shadow p-4 bg-gray-200 rounded-xl lg:whitespace-pre-line">
+      {props.children}
+    </p>
+  );
+};
 
 const IndexPage = () => {
   const { t } = useTranslation();
@@ -32,7 +32,53 @@ const IndexPage = () => {
           1.07.2023
         </h1>
 
-        <article>
+        <div className="mt-7">
+          <StaticImage src="../images/poster.jpg" alt="BYOB BKK Poster" />
+        </div>
+
+        <article
+          id="story"
+          className="mt-20 p-10  rounded-md bg-violet-200 shadow-lg shadow-violet-400"
+        >
+          <p className="font-mono font-medium text-lg">
+            <a
+              href="https://www.byobworldwide.com/"
+              target="_blank"
+              className="text-violet-600 font-semibold hover:underline"
+            >
+              BYOB
+            </a>{" "}
+            is a series of motion picture exhibitions that take place for one
+            night in various locations around the world. Artists will bring the
+            projector/beamer to display their works along with others filled in
+            the space to create the visual together.
+          </p>
+          <p className="font-mono font-medium text-lg mt-8">
+            <a
+              href="https://www.byobworldwide.com/"
+              target="_blank"
+              className="text-violet-600 font-semibold hover:underline"
+            >
+              BYOB
+            </a>{" "}
+            was originally started by{" "}
+            <a
+              href="https://www.newrafael.com/"
+              target="_blank"
+              className="text-violet-600 font-semibold hover:underline"
+            >
+              Rafaël Rozendaal
+            </a>{" "}
+            in Berlin, Germany, in 2010. This event showcasing moving images has
+            been expanded by individuals interested in motion media in many
+            countries, such as Amsterdam, Los Angeles, Melbourne, and Taipei.
+            The open invitation invites visual artists and creators to showcase
+            their work, exploring new possibilities in presenting images through
+            projection.
+          </p>
+        </article>
+
+        {/* <article>
           <div className="flex flex-col p-10">
             <h1 className="font-mono text-4xl text-white drop-shadow my-2 mb-4">
               Guideline and Cautions.
@@ -43,74 +89,52 @@ const IndexPage = () => {
             </GuidelineBox>
 
             <GuidelineBox>
-              {
-                `Also please bring your own plug outlets and HDMI/VGA/ETC.
+              {`Also please bring your own plug outlets and HDMI/VGA/ETC.
                 We got some but possibly not enough.
-                `
-              }
+                `}
             </GuidelineBox>
 
             <GuidelineBox>
-              {
-                `Do not plug 2 Projectors into 1 Plug Outlet.
+              {`Do not plug 2 Projectors into 1 Plug Outlet.
                 The equipment may get damaged.
-                `
-              }
+                `}
             </GuidelineBox>
 
             <GuidelineBox>
-              {
-                `Do not move or change the position of other projectors without first obtaining permission.
+              {`Do not move or change the position of other projectors without first obtaining permission.
                 Please consult with our staff or owner beforehand.
-                `
-              }
+                `}
             </GuidelineBox>
 
             <GuidelineBox>
-              {
-                `Food and beverages are not permitted in the exhibition area.
+              {`Food and beverages are not permitted in the exhibition area.
                 Drinks are available in the garden area, where you may also play beamers.
-                `
-              }
+                `}
             </GuidelineBox>
 
             <GuidelineBox>
-              *BYOBBKK is not responsible for loss or damage of your personal belongings.
+              *BYOBBKK is not responsible for loss or damage of your personal
+              belongings.
             </GuidelineBox>
           </div>
-        </article>
+        </article> */}
 
-        {/* <article id="participants" className="mt-20">
+        <article id="participants" className="mt-20">
           <div className="flex flex-row p-10">
             <h2 className="font-display text-4xl text-white drop-shadow-4xl shadow-white my-2">
               Registered Participants
             </h2>
           </div>
-          <div className="flex flex-row gap-2 overflow-hidden items-center px-10">
+          <div className="flex flex-col lg:flex-row lg:flex-wrap px-10">
             {artistsList.data.map((artist) => (
-              <p className="font-mono w-40">{artist}</p>
+              <div className="w-100 font-mono p-4 shadow-lg rounded-lg select-all m-2 bg-violet-200 text-violet-800 font-medium text-xl">
+                {artist}
+              </div>
             ))}
           </div>
-        </article> */}
-
-        <article id="opencalls" className="mt-20 p-10 border border-white rounded-xl shadow-md">
-          <p className="font-mono font-medium text-lg">
-            BYOB is a series of motion picture exhibitions that take place for
-            one night in various locations around the world. Artists will bring
-            the projector/beamer to display their works along with others filled
-            in the space to create the visual together.
-          </p>
-          <p className="font-mono font-medium text-lg mt-8">
-            BYOB was originally started by Rafaël Rozendaal in Berlin, Germany,
-            in 2010. This event showcasing moving images has been expanded by
-            individuals interested in motion media in many countries, such as
-            Amsterdam, Los Angeles, Melbourne, and Taipei. The open invitation
-            invites visual artists and creators to showcase their work,
-            exploring new possibilities in presenting images through projection.
-          </p>
         </article>
 
-        <article
+        {/* <article
           id="opencalls"
           className="mt-20 p-10 border border-white rounded-xl shadow-md shadow-gray"
         >
@@ -137,7 +161,7 @@ const IndexPage = () => {
               </a>
             </div>
           </div>
-        </article>
+        </article> */}
 
         <article
           id="venue"
@@ -278,11 +302,11 @@ const IndexPage = () => {
           </div>
           <div className="flex flex-row">
             <h2 className="font-mono font-bold text-3xl text-white drop-shadow-4xl shadow-white my-2">
-              For Beamers
+              For Anyone
             </h2>
           </div>
           <div className="flex flex-col mt-5 gap-10">
-            <Disclosure
+            {/* <Disclosure
               head="Do you accept all applications ?"
               body="Yes. Please register before July 25th, so we can more easily organize for the event."
             />
@@ -301,18 +325,18 @@ const IndexPage = () => {
             <Disclosure
               head="Can I just come with USB and/or harddisk ?"
               body="Yes, you can. Just beware that your usb and harddisk is free of virus (otherwise this event will become `bring your own malware` ! we don't want to see that happens.), we can help you find some laptop that you can join to play along with the beam (but we cannot guarantee on this part). It's lot easier if you bring your own laptop."
-            />
+            /> */}
             <Disclosure
               head="Can I host my own BYOB Bangkok ?"
               body="Yes, you can ! and please also invite us to join your event :)"
             />
           </div>
 
-          <div className="flex flex-row mt-10">
+          {/* <div className="flex flex-row mt-10">
             <h2 className="font-mono font-bold text-3xl text-white drop-shadow-4xl shadow-white my-2">
               For Audiences
             </h2>
-          </div>
+          </div> */}
 
           <div className="flex flex-col mt-5 gap-10">
             <Disclosure head="Is the event free ?" body="Free admission" />

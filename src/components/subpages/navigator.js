@@ -15,18 +15,18 @@ const Navigator = () => {
           BYOB
         </a>
         <div className="flex-row text-xl gap-4 hidden lg:flex">
-          {/* <a
+          <a
             href="#participants"
             className="text-white mx-2 hover:cursor-pointer hover:underline hover:underline-offset-4 hover:text-green-600"
           >
             Participants
-          </a> */}
-          <a
+          </a>
+          {/* <a
             href="#opencalls"
             className="text-white mx-2 hover:cursor-pointer hover:underline hover:underline-offset-4 hover:text-green-600"
           >
             Open calls
-          </a>
+          </a> */}
           <a
             href="#venue"
             className="text-white mx-2 hover:cursor-pointer hover:underline hover:underline-offset-4 hover:text-green-600"
